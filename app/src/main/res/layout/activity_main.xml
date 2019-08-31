@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/operasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/transparent"
+        android:gravity="end"
+        android:soundEffectsEnabled="true"
+        android:layout_marginTop="30dp"
+        android:text="10 + 10"
+        android:textAlignment="textEnd"
+        android:textSize="60sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/hasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:gravity="end"
+        android:text="20"
+        android:textAlignment="textEnd"
+        android:textSize="40sp"
+        app:layout_constraintTop_toBottomOf="@+id/operasi" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:columnCount="3"
+        android:rowCount="4"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hasil">
+
+        <Button
+            android:id="@+id/no7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="?selectableItemBackgroundBorderless"
+            android:text="7"
+            android:textSize="45sp"/>
+
+        <Button
+            android:id="@+id/no8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="?selectableItemBackgroundBorderless"
+            android:text="8"
+            android:textSize="45sp"/>
+
+        <Button
+            android:id="@+id/no9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="?selectableItemBackgroundBorderless"
+            android:text="9"
+            android:textSize="45sp"/>
+
+
+        <Button
+            android:id="@+id/no4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="?selectableItemBackgroundBorderless"
+            android:text="4"
+            android:textSize="45sp"/>
+
+        <Button
+            android:id="@+id/no5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="?selectableItemBackgroundBorderless"
+            android:text="5"
+            android:textSize="45sp"/>
+
+        <Button
+            android:id="@+id/no6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="?selectableItemBackgroundBorderless"
+            android:text="6"
+            android:textSize="45sp"/>
+
+        <Button
+            android:id="@+id/no1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="?selectableItemBackgroundBorderless"
+            android:text="1"
+            android:textSize="45sp"/>
+
+        <Button
+            android:id="@+id/no2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="?selectableItemBackgroundBorderless"
+            android:text="2"
+            android:textSize="45sp"/>
+
+        <Button
+            android:id="@+id/no3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="?selectableItemBackgroundBorderless"
+            android:text="3"
+            android:textSize="45sp"/>
+
+        <Button
+            android:id="@+id/no0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="?selectableItemBackgroundBorderless"
+            android:text="0"
+            android:textSize="45sp"/>
+
+        <Button
+            android:id="@+id/charDot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="?selectableItemBackgroundBorderless"
+            android:text="."
+            android:textSize="45sp"/>
+
+        <Button
+            android:id="@+id/charSamaDengan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="?selectableItemBackgroundBorderless"
+            android:text="="
+            android:textSize="45sp"/>
+
+    </GridLayout>
+
+    <GridLayout
+        app:layout_constraintLeft_toRightOf="@+id/gridLayout"
+        app:layout_constraintTop_toBottomOf="@+id/hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#CCC"
+        android:layout_marginTop="26dp"
+        android:columnCount="1"
+        android:rowCount="5"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/charHapus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:background="?selectableItemBackgroundBorderless"
+            android:text="g"
+            android:textSize="45sp"/>
+
+        <Button
+            android:id="@+id/charBagi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:background="?selectableItemBackgroundBorderless"
+            android:text="/"
+            android:textSize="45sp"/>
+
+        <Button
+            android:id="@+id/charKali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:background="?selectableItemBackgroundBorderless"
+            android:text="x"
+            android:textSize="30sp"/>
+
+        <Button
+            android:id="@+id/charKurang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:background="?selectableItemBackgroundBorderless"
+            android:text="-"
+            android:textSize="45sp"/>
+
+        <Button
+            android:id="@+id/charTambah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:background="?selectableItemBackgroundBorderless"
+            android:text="+"
+            android:textSize="45sp"/>
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
